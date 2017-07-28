@@ -1,0 +1,13 @@
+CS143a HW7 Part 1
+Timothy Pranoto
+38964311
+
+read the file from /foo/bar with Inode-based System:
+-Use Master Block to find inode for "/" on disk
+-Open "/", look for entry for "foo"
+-Use the Master Block again to find inode for"/foo/" on disk
+-Open "/foo/", look for entry for "/foo/bar"
+-This entry gives the disk block number for the inode for "bar"
+-Read the inode for "bar" into memory
+-The inode says where first data block is on disk
+-Read that block into memory to access the data in the file

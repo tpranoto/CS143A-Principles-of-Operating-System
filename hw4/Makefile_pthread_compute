@@ -1,0 +1,13 @@
+CC = gcc
+CFLAGS = -I. -lpthread
+PROGRAM = pthread_compute
+INPUT = integers.dat
+
+all: pthread_compute.c
+	$(CC) -o $(PROGRAM) pthread_compute.c $(CFLAGS)
+
+run: $(PROGRAM)
+	./$(PROGRAM) < $(INPUT)
+
+clean:
+	rm $(PROGRAM)

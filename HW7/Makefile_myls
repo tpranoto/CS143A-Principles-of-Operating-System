@@ -1,0 +1,13 @@
+CC = gcc
+CFLAGS = -I.
+PROGRAM = myls
+INPUT = /var/www
+
+all: myls.c
+	$(CC) -o $(PROGRAM) myls.c $(CFLAGS)
+
+run: $(PROGRAM)
+	./$(PROGRAM) $(INPUT)
+
+clean:
+	rm $(PROGRAM)

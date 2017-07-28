@@ -1,0 +1,13 @@
+CC = gcc
+CFLAGS = -I.
+PROGRAM = my_shell
+INPUT = InputScript.txt
+
+all: my_shell.c
+	$(CC) -o $(PROGRAM) my_shell.c $(CFLAGS)
+
+run: $(PROGRAM)
+	./$(PROGRAM) < $(INPUT)
+
+clean:
+	rm $(PROGRAM)

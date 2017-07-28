@@ -1,0 +1,7 @@
+4	/var/www/html
+4	/var/www/cgi-bin
+260	/var/www/icons/small
+948	/var/www/icons
+16	/var/www/error/include
+216	/var/www/error
+1176	/var/www

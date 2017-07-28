@@ -1,0 +1,8 @@
+Timothy Pranoto
+CS143a HW3 Part1
+
+Concurrency can be usefull:
+- Improving program structure (responsive GUI)
+- Writing parallel program (3D graphics rendering)
+
+It is also useful in single CPU machine because of the mainly thread blocking / waiting, it makes multi threads easier to run.
